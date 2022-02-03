@@ -1,55 +1,54 @@
+var nav
+var posSections
+const idSections = ["#historia", "#agrupament", "#proposta", "#branques", "#calendari", "#contacta"]
 $(document).ready(function() {
-  const idSections = ["#historia", "#agrupament", "#proposta", "#branques", "#calendari", "#contacta"]
-  animarNav(idSections)
+  nav = $('nav').innerHeight()
+  animarNav()
+  actualizarPosSec()
   $(window).scroll(function() {
-    animarNav(idSections)
+    nav = $('nav').innerHeight()
+    animarNav()
   });
-  $(window).resize(function() {
-    animarNav(idSections)
-  });
+  //Al clicar sobre una sección del navbar la pagina hace scroll hasta la escogida
   $("a.page-scroll").click(function(e) {
+    e.preventDefault()
     var href = $(this).attr('href');
-    let nav
-    if(href === "#page-top"){
-     nav = 0
-   } else if (screen.width <= 1200){
+    if (href === "#page-top") {
+      nav = 0
+    } else if (screen.width <= 1200) {
       nav = $('nav').innerHeight() - $('#menu').innerHeight()
-      $('button.navbar-toggler').click()
-    } else {
-      nav = $('nav').innerHeight()
+      $('#button.navbar-toggler').click()
     }
     $('html,body').animate({
-      scrollTop: $(href).offset().top - nav
+      scrollTop: $(href).position().top - nav
     }, 2000);
-    e.preventDefault()
   });
 });
-
-function animarNav(idSections) {
-  var posSections = getPosSec()
-  if (window.pageYOffset >= posSections[0] - $('nav').innerHeight()) {
+//función que da genera la amimacion del Nav
+function animarNav() {
+  actualizarPosSec()
+  if (window.pageYOffset >= posSections[0]) {
     $('.navbar-default').addClass('navbar-shrink');
   } else {
     $('.navbar-default').removeClass('navbar-shrink');
   }
   for (var i = 0; i < posSections.length; i++) {
-    if (window.pageYOffset >= posSections[i] - $('nav').innerHeight()
-     && (window.pageYOffset < posSections[i + 1] - $('nav').innerHeight() || i == 5)
-     && (window.pageYOffset > posSections[i - 1] - $('nav').innerHeight() || i == 0)) {
+    if (window.pageYOffset >= posSections[i]
+       && (window.pageYOffset < posSections[i + 1] || i == 5)
+        && (window.pageYOffset > posSections[i - 1] || i == 0)) {
       $('a[href="' + idSections[i] + '"]').parent().addClass('active')
     } else {
       $('a[href="' + idSections[i] + '"]').parent().removeClass('active')
     }
   }
 }
-
-function getPosSec(){
-  var posSections = [$('#historia').position().top,
-    $('#agrupament').position().top,
-    $('#proposta').position().top,
-    $('#branques').position().top,
-    $('#calendari').position().top,
-    $('#contacta').position().top
+//función que me actualiza las posiciones de las seccciones
+function actualizarPosSec() {
+  posSections = [$('#historia').position().top - nav,
+    $('#agrupament').position().top - nav,
+    $('#proposta').position().top - nav,
+    $('#branques').position().top - nav,
+    $('#calendari').position().top - nav,
+    $('#contacta').position().top - nav
   ]
-  return posSections
 }
