@@ -2,11 +2,11 @@ var nav
 var posSections
 const idSections = ["#historia", "#agrupament", "#proposta", "#branques", "#calendari", "#contacta"]
 $(document).ready(function() {
-  nav = $('nav').innerHeight()
+  nav = $('nav').outerHeight(true)
   animarNav()
   actualizarPosSec()
   $(window).scroll(function() {
-    nav = $('nav').innerHeight()
+    nav = $('nav').outerHeight(true)
     animarNav()
   });
   //Al clicar sobre una sección del navbar la pagina hace scroll hasta la escogida
@@ -19,10 +19,10 @@ $(document).ready(function() {
     if (href === "#page-top") {
       nav = 0
     } else if (screen.width <= 1200) {
-      nav = $('nav').innerHeight() - $('#menu').innerHeight()
+      nav = $('nav').outerHeight(true) - $('#menu').outerHeight(true)
     }
     $('html,body').animate({
-      scrollTop: $(href).position().top - nav
+      scrollTop: $(href).position().top - nav + 1
     }, 2000);
   });
 });
