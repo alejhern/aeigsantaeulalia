@@ -20,6 +20,7 @@
   <link href="styles/nav.css" rel="stylesheet">
   <link href="styles/header.css" rel="stylesheet">
   <link href="styles/timeline.css" rel="stylesheet">
+  <link href="styles/contacta.css" rel="stylesheet">
   <!-- Custom Fonts -->
   <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
   <link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
@@ -120,7 +121,37 @@
   <section id="proposta" style="height:500px;">pea</section>
   <section id="branques" style="height:500px;">branques</section>
   <section id="calendari" style="height:500px;">calendari</section>
-  <section id="contacta" style="height:500px;">contacta</section>
+  <div id="contacta" class="container-fluid">
+    <div class="row title">
+      <h1>CONTACTAN'S</h1>
+    </div>
+    <div class="row">
+      <form>
+        <div class="form-group">
+          <label for="name" class="col-form-label-lg">Nom</label>
+          <input type="text" class="form-control form-control-lg" id="name">
+        </div>
+        <div class="form-group">
+          <label for="email" class="col-form-label-lg">Correu electrònic</label>
+          <input type="email" class="form-control form-control-lg" id="email">
+        </div>
+        <div class="form-group">
+          <label for="subject" class="col-form-label-lg">Assumpte</label>
+          <select class="form-control form-control-lg" id="subject">
+            <option disabled selected value="">Escull un Assumpte...</option>
+            <option>Vull apuntar al meu fill/a al cau</option>
+            <option>Vull ser cap</option>
+            <option>Som un altre agrupament que volem fer activitats conjuntes</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message" class="col-form-label-lg">Missatge</label>
+          <textarea class="form-control form-control-lg" id="message" rows="3"></textarea>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
 </body>
 <!-- jQuery Version v3.6.0 -->
 <script src="frontend/jquery-3.6.0.min.js"></script>

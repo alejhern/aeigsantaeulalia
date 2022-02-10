@@ -1,3 +1,10 @@
+:root {
+  --primary-color: #222;
+  --secondary-color: #006600;
+  --tertiary-color: #F2C12E;
+
+}
+
 body {
   overflow-x: hidden;
   font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -28,5 +35,13 @@ h5,
 h6 {
   text-transform: uppercase;
   font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 700;
+  font-weight: 800;
+}
+
+.title{
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  padding: 1%;
+  text-shadow: 5px 5px var(--secondary-color);
 }

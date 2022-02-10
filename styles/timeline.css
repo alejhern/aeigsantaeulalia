@@ -1,14 +1,6 @@
-/*
-.title {
-  font-size: 38px;
-  color: #616161;
-  font-style: italic;
-  font-weight: 800;
-}
-*/
 .timeline {
   width: 100%;
-  background-color: #222;
+  background-color: var(--primary-color);
   box-shadow: 0 5px 25px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -62,7 +54,7 @@
   font-size: 42px;
   margin-bottom: 50px;
   transform: translate3d(20px, 0, 0);
-  color: #d4a024;
+  color: var(--tertiary-color);
   font-weight: 300;
   opacity: 0;
   transition: 0.2s ease 0.4s;
@@ -111,7 +103,7 @@
   font-weight: bold;
   font-size: 20px;
   z-index: 1;
-  background-color: #222;
+  background-color: var(--primary-color);
   overflow: auto;
 }
 
@@ -131,7 +123,7 @@
   text-align: center;
   opacity: 1;
   background: transparent;
-  color: #d4a024;
+  color: var(--tertiary-color);
   margin: 15px 0 !important;
   position: relative;
 }
@@ -144,17 +136,14 @@
   width: 6px;
   height: 6px;
   border-radius: 100%;
-  background-color: #d4a024;
+  background-color: var(--tertiary-color);
   transform: scale(0);
   transition: 0.2s;
 }
 
 .timeline .swiper-pagination-bullet-active {
-  color: #d4a024;
-}
-
-.timeline .swiper-pagination-bullet-active::before {
-  transform: scale(1);
+  font-weight: bold;
+  font-size: 130%;
 }
 
 .swiper-button-next{
@@ -187,10 +176,6 @@
   .timeline .swiper-slide .timeline-title {
     font-size: 46px;
     margin: 0;
-  }
-
-  .timeline .swiper-pagination {
-    display: flex;
   }
 
   .timeline .swiper-button-prev {

@@ -1,0 +1,39 @@
+#contacta {
+  text-align: center;
+  background-attachment: scroll;
+  background-image: url(../media/fondo_formulario_2.jpg);
+  background-position: center center 100%;
+  background-repeat: none;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+form{
+  margin: auto;
+  width: 50%;
+}
+
+input, select, option,textarea{
+  border-radius: 20px !important;
+  min-height: 50px;
+}
+
+label{
+  color: var(--tertiary-color);
+  font-weight: 900;
+  display: flex;
+  justify-content: flex-start;
+  font-size: larger;
+}
+
+button[type="submit"]{
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 150%;
+  height: auto;
+  width: 60%;
+  color: var(--tertiary-color);
+  background-color: var(--secondary-color);
+}
