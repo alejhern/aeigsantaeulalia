@@ -12,12 +12,14 @@ $(document).ready(function() {
   //Al clicar sobre una sección del navbar la pagina hace scroll hasta la escogida
   $("a.page-scroll").click(function(e) {
     e.preventDefault()
+    if ($('button.navbar-toggler').is(":visible")){
+      $('button.navbar-toggler').click()
+    }
     var href = $(this).attr('href');
     if (href === "#page-top") {
       nav = 0
     } else if (screen.width <= 1200) {
       nav = $('nav').innerHeight() - $('#menu').innerHeight()
-      $('#button.navbar-toggler').click()
     }
     $('html,body').animate({
       scrollTop: $(href).position().top - nav
