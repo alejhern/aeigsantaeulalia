@@ -2,7 +2,6 @@
 <html lang="ca">
 
 <head>
-
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,11 +14,14 @@
   <link href="styles/bootstrap.min.css" rel="stylesheet">
   <!-- Swiper Core CSS -->
   <link rel='stylesheet' href='styles/swiper.min.css'>
+  <!-- Full Calendar Core Css-->
+  <link rel='stylesheet' type='text/css' href='styles/fullcalendar.min.css' />
   <!-- Custom CSS -->
   <link href="styles/style.css" rel="stylesheet">
   <link href="styles/nav.css" rel="stylesheet">
   <link href="styles/header.css" rel="stylesheet">
   <link href="styles/timeline.css" rel="stylesheet">
+  <link href="styles/calendar.css" rel="stylesheet">
   <link href="styles/contacta.css" rel="stylesheet">
   <!-- Custom Fonts -->
   <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
@@ -120,20 +122,28 @@
   <section id="agrupament" style="height:500px;">que som</section>
   <section id="proposta" style="height:500px;">pea</section>
   <section id="branques" style="height:500px;">branques</section>
-  <section id="calendari" style="height:500px;">calendari</section>
+  <div id="calendari" class="container-fluid">
+    <iframe src="calendarComponent/calendar.html" frameborder="0" scrolling="no"></iframe>
+  </div>
   <div id="contacta" class="container-fluid">
     <div class="row title">
       <h1>CONTACTAN'S</h1>
     </div>
-    <div class="row">
+    <div class="row" id="form">
       <form>
         <div class="form-group">
           <label for="name" class="col-form-label-lg">Nom</label>
           <input type="text" class="form-control form-control-lg" id="name">
         </div>
-        <div class="form-group">
-          <label for="email" class="col-form-label-lg">Correu electrònic</label>
-          <input type="email" class="form-control form-control-lg" id="email">
+        <div class="form-row">
+          <div class="col-7">
+            <label for="email" class="col-form-label-lg">Correu electrònic</label>
+            <input type="email" class="form-control form-control-lg" id="email">
+          </div>
+          <div class="col-5">
+            <label for="mobile" class="col-form-label-lg">Telèfon (Opcional)</label>
+            <input type="text" class="form-control form-control-lg" id="mobile">
+          </div>
         </div>
         <div class="form-group">
           <label for="subject" class="col-form-label-lg">Assumpte</label>
@@ -148,21 +158,21 @@
           <label for="message" class="col-form-label-lg">Missatge</label>
           <textarea class="form-control form-control-lg" id="message" rows="3"></textarea>
         </div>
-        <button type="submit">Submit</button>
+        <button type="submit">Envia</button>
       </form>
     </div>
   </div>
 </body>
 <!-- jQuery Version v3.6.0 -->
-<script src="frontend/jquery-3.6.0.min.js"></script>
+<script type='text/javascript' src="frontend/jquery-3.6.0.min.js"></script>
 <!-- Bootstrap Core JavaScript -->
-<script src="frontend/bootstrap.min.js"></script>
+<script type='text/javascript' src="frontend/bootstrap.min.js"></script>
 <!-- Plugin JavaScript -->
-<script src="frontend/popper.min.js"></script>
+<script type='text/javascript' src="frontend/popper.min.js"></script>
 <!-- Plugin Swiper -->
-<script src='frontend/swiper.min.js'></script>
+<script type='text/javascript' src='frontend/swiper.min.js'></script>
 <!-- Custom JS -->
-<script src="frontend/cbpAnimatedHeader.js"></script>
-<script src="frontend/timeline.js"></script>
+<script type='text/javascript' src="frontend/cbpAnimatedHeader.js"></script>
+<script type='text/javascript' src="frontend/timeline.js"></script>
 
 </html>

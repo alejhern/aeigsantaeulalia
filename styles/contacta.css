@@ -1,7 +1,7 @@
 #contacta {
   text-align: center;
   background-attachment: scroll;
-  background-image: url(../media/fondo_formulario_2.jpg);
+  background-image: url(../media/fondo_formulario.jpg);
   background-position: center center 100%;
   background-repeat: none;
   -webkit-background-size: cover;
@@ -10,13 +10,16 @@
   -o-background-size: cover;
 }
 
+#form{
+  display: flex;
+  justify-content: center;
+}
+
 form{
-  margin: auto;
-  width: 50%;
+  width: 70%;
 }
 
 input, select, option,textarea{
-  border-radius: 20px !important;
   min-height: 50px;
 }
 
@@ -26,14 +29,16 @@ label{
   display: flex;
   justify-content: flex-start;
   font-size: larger;
+  text-shadow: 2px 2px var(--primary-color);
 }
 
 button[type="submit"]{
-  border-radius: 20px;
   font-weight: bold;
   font-size: 150%;
   height: auto;
-  width: 60%;
+  width: 35%;
   color: var(--tertiary-color);
   background-color: var(--secondary-color);
+  border: 0px;
+  text-align: center;
 }
