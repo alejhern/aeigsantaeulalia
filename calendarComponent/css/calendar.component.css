@@ -1,0 +1,12 @@
+#rowSelectCalendar{
+  display: flex;
+  justify-content: flex-end;
+}
+
+option{
+  text-align: center;
+}
+
+.fc-center{
+  text-transform: uppercase;
+}

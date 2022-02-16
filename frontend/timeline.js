@@ -35,6 +35,7 @@ $(document).ready(function() {
   }
   // Esta funcón sirve para determinar si lo que se muestra por pantalla es la linea temporal
   function isFocus() {
+    //el array posSections esta declarado en ./cbpAnimatedHeader.js
     if (window.pageYOffset >= posSections[0] && window.pageYOffset <= posSections[1]) {
       return true
     } else {

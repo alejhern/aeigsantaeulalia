@@ -1,4 +1,16 @@
-iframe{
-  width: 100%;
-  min-height: 600px;
+iframe#calendar {
+  position: absolute;
+  top: 0;
+  width: 90%;
+  height: 100% !important;
+  border: 0;
+  margin: auto;
+}
+
+div.calendar {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  padding-top: 80%;
 }
