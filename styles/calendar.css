@@ -1,16 +1,18 @@
-iframe#calendar {
-  position: absolute;
-  top: 0;
-  width: 90%;
-  height: 100% !important;
-  border: 0;
+#rowSelectCalendar{
+  display: flex;
+  justify-content: flex-end;
+  width: 95%;
   margin: auto;
 }
 
-div.calendar {
-  display: flex;
-  justify-content: center;
-  position: relative;
-  overflow: hidden;
-  padding-top: 80%;
+option.calendari {
+  text-align: center;
+}
+
+#calendar{
+  width: 90%;
+}
+
+.fc-center {
+  text-transform: uppercase;
 }

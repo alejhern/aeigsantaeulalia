@@ -62,9 +62,9 @@ function getEvents() {
 function generarCalendario() {
   $('#calendar').fullCalendar({
     header: {
-      left: 'prev,next,today',
+      left: 'prev,next',
       center: 'title',
-      right: 'month,agendaWeek'
+      right: 'today'
     },
     defaultDate: new Date(),
     buttonIcons: true, // show the prev/next text

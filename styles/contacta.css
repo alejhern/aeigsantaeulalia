@@ -10,20 +10,15 @@
   -o-background-size: cover;
 }
 
-#form{
-  display: flex;
-  justify-content: center;
-}
-
 form{
   width: 70%;
 }
 
-input, select, option,textarea{
+input.form-contact, select.form-contact, option.form-contact,textarea.form-contact{
   min-height: 50px;
 }
 
-label{
+label.form-contact{
   color: var(--tertiary-color);
   font-weight: 900;
   display: flex;

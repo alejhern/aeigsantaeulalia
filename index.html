@@ -11,11 +11,11 @@
   <title>Santa Eulàlia::L'aventura de creixer</title>
 
   <!-- Bootstrap Core CSS -->
-  <link href="styles/bootstrap.min.css" rel="stylesheet">
+  <link href="styles/plugins/bootstrap.min.css" rel="stylesheet">
   <!-- Swiper Core CSS -->
-  <link rel='stylesheet' href='styles/swiper.min.css'>
+  <link rel='stylesheet' href='styles/plugins/swiper.min.css'>
   <!-- Full Calendar Core Css-->
-  <link rel='stylesheet' type='text/css' href='styles/fullcalendar.min.css' />
+  <link rel='stylesheet' type='text/css' href='styles/plugins/fullcalendar.min.css' />
   <!-- Custom CSS -->
   <link href="styles/style.css" rel="stylesheet">
   <link href="styles/nav.css" rel="stylesheet">
@@ -123,33 +123,51 @@
   <section id="proposta" style="height:500px;">pea</section>
   <section id="branques" style="height:500px;">branques</section>
   <div id="calendari" class="container-fluid">
-    <div class="row calendar">
-      <iframe src="calendarComponent/calendar.component.html" id="calendar" scrolling="no"></iframe>
+    <div id="rowSelectCalendar" class="row">
+      <div class="input-group col-5">
+        <div class="input-group-prepend">
+          <label class="input-group-text" for="calendarSelect">Mostrar Calendari</label>
+        </div>
+        <select class="custom-select" id="calendarSelect">
+          <option value="cau" class="calendari" selected>Agrupament</option>
+          <option value="cill" class="calendari">Castors i LLúdrigues</option>
+          <option value="llid" class="calendari">LLops i Daines</option>
+          <option value="ring" class="calendari">Ràngers i Noies Guies</option>
+          <option value="pic" class="calendari">Pioners i Caravel·les</option>
+          <option value="truc" class="calendari">TRUCS</option>
+        </select>
+      </div>
     </div>
+    <br>
+    <div class="row">
+      <div id="calendar"></div>
+    </div>
+    <!--
+      <iframe src="calendarComponent/calendar.component.html" id="calendar" scrolling="no"></iframe>-->
   </div>
   <div id="contacta" class="container-fluid">
     <div class="row title">
       <h1>CONTACTAN'S</h1>
     </div>
-    <div class="row" id="form">
+    <div class="row">
       <form>
         <div class="form-group">
-          <label for="name" class="col-form-label-lg">Nom</label>
-          <input type="text" class="form-control form-control-lg" id="name">
+          <label for="name" class="col-form-label-lg form-contact">Nom</label>
+          <input type="text" class="form-control form-control-lg form-contact" id="name">
         </div>
         <div class="form-row">
           <div class="col-7">
-            <label for="email" class="col-form-label-lg">Correu electrònic</label>
+            <label for="email" class="col-form-label-lg form-contact">Correu electrònic</label>
             <input type="email" class="form-control form-control-lg" id="email">
           </div>
           <div class="col-5">
-            <label for="mobile" class="col-form-label-lg">Telèfon (Opcional)</label>
-            <input type="text" class="form-control form-control-lg" id="mobile">
+            <label for="mobile" class="col-form-label-lg form-contact">Telèfon (Opcional)</label>
+            <input type="text" class="form-control form-control-lg form-contact" id="mobile">
           </div>
         </div>
         <div class="form-group">
-          <label for="subject" class="col-form-label-lg">Assumpte</label>
-          <select class="form-control form-control-lg" id="subject">
+          <label for="subject" class="col-form-label-lg form-contact">Assumpte</label>
+          <select class="form-control form-control-lg form-contact" id="subject">
             <option disabled selected value="">Escull un Assumpte...</option>
             <option>Vull apuntar al meu fill/a al cau</option>
             <option>Vull ser cap</option>
@@ -157,8 +175,8 @@
           </select>
         </div>
         <div class="form-group">
-          <label for="message" class="col-form-label-lg">Missatge</label>
-          <textarea class="form-control form-control-lg" id="message" rows="3"></textarea>
+          <label for="message" class="col-form-label-lg form-contact">Missatge</label>
+          <textarea class="form-control form-control-lg form-contact" id="message" rows="3"></textarea>
         </div>
         <button type="submit">Envia</button>
       </form>
@@ -166,15 +184,20 @@
   </div>
 </body>
 <!-- jQuery Version v3.6.0 -->
-<script type='text/javascript' src="frontend/jquery-3.6.0.min.js"></script>
+<script type='text/javascript' src="frontend/plugins/jquery-3.6.0.min.js"></script>
 <!-- Bootstrap Core JavaScript -->
-<script type='text/javascript' src="frontend/bootstrap.min.js"></script>
+<script type='text/javascript' src="frontend/plugins/bootstrap.min.js"></script>
 <!-- Plugin JavaScript -->
-<script type='text/javascript' src="frontend/popper.min.js"></script>
+<script type='text/javascript' src="frontend/plugins/popper.min.js"></script>
 <!-- Plugin Swiper -->
-<script type='text/javascript' src='frontend/swiper.min.js'></script>
+<script type='text/javascript' src='frontend/plugins/swiper.min.js'></script>
+<!-- Plugin Moment -->
+<script type='text/javascript' src='frontend/plugins/moment.min.js'></script>
+<!-- Plugim Full Calendar -->
+<script type='text/javascript' src='frontend/plugins/fullcalendar.min.js'></script>
+<script type='text/javascript' src='frontend/plugins/es.js'></script>
 <!-- Custom JS -->
 <script type='text/javascript' src="frontend/cbpAnimatedHeader.js"></script>
 <script type='text/javascript' src="frontend/timeline.js"></script>
-
+<script type='text/javascript' src='frontend/crearCalendario.component.js'></script>
 </html>
