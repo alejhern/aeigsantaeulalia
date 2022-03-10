@@ -1,6 +1,6 @@
 var nav
 var posSections
-const idSections = ["#historia", "#agrupament", "#proposta", "#branques", "#calendari", "#contacta"]
+const idSections = ["#historia", "#agrupament", "#pea", "#branques", "#calendari", "#contacta"]
 $(document).ready(function() {
   nav = $('nav').outerHeight(true)
   animarNav()
@@ -12,7 +12,7 @@ $(document).ready(function() {
   //Al clicar sobre una sección del navbar la pagina hace scroll hasta la escogida
   $("a.page-scroll").click(function(e) {
     e.preventDefault()
-    if ($('button.navbar-toggler').is(":visible")){
+    if ($('button.navbar-toggler').is(":visible")) {
       $('button.navbar-toggler').click()
     }
     var href = $(this).attr('href');
@@ -29,15 +29,15 @@ $(document).ready(function() {
 //función que da genera la amimacion del Nav
 function animarNav() {
   actualizarPosSec()
-  if (window.pageYOffset >= posSections[0]) {
+  if (window.pageYOffset >= ($('#header-text').position().top - nav)) {
     $('.navbar-default').addClass('navbar-shrink');
   } else {
     $('.navbar-default').removeClass('navbar-shrink');
   }
   for (var i = 0; i < posSections.length; i++) {
-    if (window.pageYOffset >= posSections[i]
-       && (window.pageYOffset < posSections[i + 1] || i == 5)
-        && (window.pageYOffset > posSections[i - 1] || i == 0)) {
+    if (window.pageYOffset >= posSections[i] &&
+      (window.pageYOffset < posSections[i + 1] || i == 5) &&
+      (window.pageYOffset > posSections[i - 1] || i == 0)) {
       $('a[href="' + idSections[i] + '"]').parent().addClass('active')
     } else {
       $('a[href="' + idSections[i] + '"]').parent().removeClass('active')
@@ -46,11 +46,8 @@ function animarNav() {
 }
 //función que me actualiza las posiciones de las seccciones
 function actualizarPosSec() {
-  posSections = [$('#historia').position().top - nav,
-    $('#agrupament').position().top - nav,
-    $('#proposta').position().top - nav,
-    $('#branques').position().top - nav,
-    $('#calendari').position().top - nav,
-    $('#contacta').position().top - nav
-  ]
+  posSections = []
+  for (var i = 0; i < idSections.length; i++) {
+    posSections.push($(idSections[i]).position().top - nav)
+  }
 }
