@@ -1,0 +1,24 @@
+#headerpea {
+  text-align: center;
+  color: var(--tertiary-color);
+  background-attachment: scroll;
+  background-image: url(../media/pea.jpg);
+  background-position: center 68%;
+  background-repeat: none;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+#headerpea .intro-text {
+  padding-top: 3%;
+  padding-bottom: 3%;
+  display: flex;
+  justify-content: center;
+}
+
+#headerpea .intro-text .intro-heading {
+  font-size: 50px;
+  font-weight: bold;
+}

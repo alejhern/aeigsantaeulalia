@@ -4,13 +4,12 @@ nav {
   z-index: 10;
 }
 
-.navbar-default.navbar-shrink {
+.navbar-shrink {
   background-color: var(--primary-color);
 }
 
 .navbar-default {
-  padding: 10px 0 !important;
-  border-color: transparent;
+  padding: 10px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -30,17 +29,16 @@ nav {
 .collapse .navbar-nav li a {
   text-transform: uppercase;
   font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 400;
-  font-size: larger;
+  font-weight: bold;
+  font-size: 100%;
   letter-spacing: 1px;
   color: #fff !important;
-  text-shadow: 1px 1px black;
 }
 
 .navbar-default .nav li a:hover {
   outline: 1;
   color: var(--secondary-color) !important;
-  font-weight: bold;
+  font-size: 1.5em;
 }
 
 .navbar-default .navbar-nav>.active>a {
@@ -60,12 +58,18 @@ nav {
 }
 
 @media(min-width:1200px) {
-  .navbar-default {
-    justify-content: center !important;
+  .navbar-default .navbar-brand {
+    font-size: 2em;
+  }
+}
+
+@media(min-width:1400px) {
+  .collapse .navbar-nav li a {
+    font-size: 1.5em;
   }
 
-  .navbar-default .navbar-brand {
-    font-size: 1.5em;
+  .navbar-default .nav li a:hover {
+    font-size: 2em;
   }
 }
 

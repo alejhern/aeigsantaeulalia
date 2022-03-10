@@ -16,10 +16,12 @@
   <link rel='stylesheet' href='styles/plugins/swiper.min.css'>
   <!-- Full Calendar Core Css-->
   <link rel='stylesheet' type='text/css' href='styles/plugins/fullcalendar.min.css' />
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.0/fullcalendar.print.css" media="print">
   <!-- Custom CSS -->
   <link href="styles/style.css" rel="stylesheet">
   <link href="styles/nav.css" rel="stylesheet">
   <link href="styles/header.css" rel="stylesheet">
+  <link href="styles/pea.css" rel="stylesheet">
   <link href="styles/timeline.css" rel="stylesheet">
   <link href="styles/calendar.css" rel="stylesheet">
   <link href="styles/contacta.css" rel="stylesheet">
@@ -33,7 +35,7 @@
 <body id="page-top" class="index">
   <!-- Navigation -->
   <nav class="navbar navbar-expand-xl navbar-dark navbar-default">
-    <a class="navbar-brand page-scroll" href="#page-top"><img src="media/logoSantaEulalia.png" height="60" width="60">AEIG SANTA EULÀLIA</a>
+    <a class="navbar-brand page-scroll" href="#page-top"><img src="media/logoSantaEulalia.png" alt="Logo Santa Eulàlia" height="60" width="60">AEIG SANTA EULÀLIA</a>
     <button class="navbar-toggler btn-outline-success" type="button" data-toggle="collapse" data-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -46,7 +48,7 @@
           <a class="page-scroll nav-link" href="#agrupament">QUE FEM?</a>
         </li>
         <li class="nav-item">
-          <a class="page-scroll nav-link" href="#proposta">PROPOSTA EDUCATIVA</a>
+          <a class="page-scroll nav-link" href="#pea">PROPOSTA EDUCATIVA</a>
         </li>
         <li class="nav-item">
           <a class="page-scroll nav-link" href="#branques">BRANQUES</a>
@@ -62,9 +64,9 @@
   </nav>
   <!-- Header -->
   <header>
-    <div class="container">
+    <div class="container-fluid">
       <div class="intro-text">
-        <div class="intro-lead-in">L'AVENTURA DE CREIXER!!</div>
+        <div class="intro-lead-in" id="header-text">L'AVENTURA DE CREIXER!!</div>
         <div class="intro-heading">ENTRE MAR I CEL<br>AEIG SANTA EULÀLIA</div>
       </div>
     </div>
@@ -120,15 +122,22 @@
     </div>
   </div>
   <section id="agrupament" style="height:500px;">que som</section>
-  <section id="proposta" style="height:500px;">pea</section>
+  <div id="pea" class="container-fluid">
+    <div id="headerpea" class="row">
+      <div class="intro-text">
+        <div class="title"><h1>proposta eduactiva d'agrupament</h1></div>
+      </div>
+    </div>
+  </div>
   <section id="branques" style="height:500px;">branques</section>
   <div id="calendari" class="container-fluid">
+    <!-- mejorar responsive -->
     <div id="rowSelectCalendar" class="row">
-      <div class="input-group col-5">
+      <div class="input-group col-sm-4">
         <div class="input-group-prepend">
           <label class="input-group-text" for="calendarSelect">Mostrar Calendari</label>
         </div>
-        <select class="custom-select" id="calendarSelect">
+        <select class="custom-select col-sm-8" id="calendarSelect">
           <option value="cau" class="calendari" selected>Agrupament</option>
           <option value="cill" class="calendari">Castors i LLúdrigues</option>
           <option value="llid" class="calendari">LLops i Daines</option>
@@ -142,15 +151,13 @@
     <div class="row">
       <div id="calendar"></div>
     </div>
-    <!--
-      <iframe src="calendarComponent/calendar.component.html" id="calendar" scrolling="no"></iframe>-->
   </div>
   <div id="contacta" class="container-fluid">
     <div class="row title">
       <h1>CONTACTAN'S</h1>
     </div>
     <div class="row">
-      <form>
+      <form id="formContacta">
         <div class="form-group">
           <label for="name" class="col-form-label-lg form-contact">Nom</label>
           <input type="text" class="form-control form-control-lg form-contact" id="name">
@@ -178,6 +185,12 @@
           <label for="message" class="col-form-label-lg form-contact">Missatge</label>
           <textarea class="form-control form-control-lg form-contact" id="message" rows="3"></textarea>
         </div>
+        <div class="form-row">
+          <div class="d-flex justify-content-center form-group col-lg">
+            <div class="g-recaptcha" data-sitekey="6LcAkZkeAAAAAMWFL28eAU_2gfINBxDAZi4XdDiI"></div>
+          </div>
+        </div>
+        <br>
         <button type="submit">Envia</button>
       </form>
     </div>
@@ -196,8 +209,11 @@
 <!-- Plugim Full Calendar -->
 <script type='text/javascript' src='frontend/plugins/fullcalendar.min.js'></script>
 <script type='text/javascript' src='frontend/plugins/es.js'></script>
+<!-- reCapcha api -->
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 <!-- Custom JS -->
 <script type='text/javascript' src="frontend/cbpAnimatedHeader.js"></script>
 <script type='text/javascript' src="frontend/timeline.js"></script>
-<script type='text/javascript' src='frontend/crearCalendario.component.js'></script>
+<script type='text/javascript' src='frontend/calendar.js'></script>
+<script type='text/javascript' src='frontend/postFormContact.js'></script>
 </html>

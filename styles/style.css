@@ -1,7 +1,7 @@
 :root {
   --primary-color: #222;
   --secondary-color: #006600;
-  --tertiary-color: #F2C12E;
+  --tertiary-color: #ffe600;
 }
 
 body {
@@ -26,26 +26,19 @@ a.active {
   outline: 0;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  text-transform: uppercase;
-  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 800;
-}
-
 .title{
+  font-family: 'Kaushan Script';
+  text-transform: uppercase;
+  font-weight: bold;
   display: flex;
   justify-content: center;
-  color: #fff;
-  padding: 1%;
-  text-shadow: 5px 5px var(--secondary-color);
+  color: var(--tertiary-color);
+  text-shadow: 3px 3px var(--primary-color);
 }
 
 .row{
   display: flex;
   justify-content: center;
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
