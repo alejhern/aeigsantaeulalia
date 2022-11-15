@@ -1,7 +1,6 @@
 #rowSelectCalendar{
   display: flex;
-  justify-content: flex-end;
-  width: 95%;
+  justify-content: center !important;
   margin: auto;
 }
 
