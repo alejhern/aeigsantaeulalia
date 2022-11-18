@@ -32,8 +32,6 @@ button[type="submit"]{
   font-size: 150%;
   height: auto;
   width: 35%;
-  color: var(--secondary-color);
-  background-color: var(--tertiary-color);
   border: 0px;
   text-align: center;
 }
