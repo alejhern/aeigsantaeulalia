@@ -1,12 +1,30 @@
 :root {
   --primary-color: #222;
-  --secondary-color: #006600;
-  --tertiary-color: #ffe600;
+  --secondary-color: #ffe600;
+  --tertiary-color: #006600;
 }
 
 body {
   overflow-x: hidden;
   font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body:after{
+  /* background: linear-gradient(90deg, rgba(190,78,114,1) 0%, rgba(254,117,98,1) 33.33%, rgba(86,72,105,1) 66.66%,  rgba(126,70,99,1) 100%) */
+  background-image: linear-gradient(
+    90deg,
+    rgba(107, 208, 228, 1) 0%,
+    rgba(96, 78, 177, 1) 33%,
+    rgba(200, 142, 102, 1) 66%,
+    rgba(201, 85, 169, 1) 100%
+  ); /* w3c */
+  content: "";
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  height: 5px;
+  z-index: +30;
 }
 
 p {
@@ -32,7 +50,7 @@ a.active {
   font-weight: bold;
   display: flex;
   justify-content: center;
-  color: var(--tertiary-color);
+  color: var(--secondary-color);
   text-shadow: 3px 3px var(--primary-color);
 }
 

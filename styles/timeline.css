@@ -54,7 +54,7 @@
   font-size: 42px;
   margin-bottom: 50px;
   transform: translate3d(20px, 0, 0);
-  color: var(--tertiary-color);
+  color: var(--secondary-color);
   font-weight: 300;
   opacity: 0;
   transition: 0.2s ease 0.4s;
@@ -123,7 +123,7 @@
   text-align: center;
   opacity: 1;
   background: transparent;
-  color: var(--tertiary-color);
+  color: var(--secondary-color);
   margin: 15px 0 !important;
   position: relative;
 }
@@ -136,7 +136,7 @@
   width: 6px;
   height: 6px;
   border-radius: 100%;
-  background-color: var(--tertiary-color);
+  background-color: var(--secondary-color);
   transform: scale(0);
   transition: 0.2s;
 }

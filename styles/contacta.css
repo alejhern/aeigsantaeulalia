@@ -19,7 +19,7 @@ input.form-contact, select.form-contact, option.form-contact,textarea.form-conta
 }
 
 label.form-contact{
-  color: var(--tertiary-color);
+  color: var(--secondary-color);
   font-weight: 900;
   display: flex;
   justify-content: flex-start;
@@ -32,8 +32,8 @@ button[type="submit"]{
   font-size: 150%;
   height: auto;
   width: 35%;
-  color: var(--tertiary-color);
-  background-color: var(--secondary-color);
+  color: var(--secondary-color);
+  background-color: var(--tertiary-color);
   border: 0px;
   text-align: center;
 }
