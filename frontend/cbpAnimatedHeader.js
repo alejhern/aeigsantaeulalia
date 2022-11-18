@@ -34,10 +34,10 @@ function animarNav() {
   } else {
     $('.navbar-default').removeClass('navbar-shrink');
   }
-  for (var i = 0; i < posSections.length; i++) {
-    if (window.pageYOffset >= posSections[i] &&
-      (window.pageYOffset < posSections[i + 1] || i == 5) &&
-      (window.pageYOffset > posSections[i - 1] || i == 0)) {
+  for (var i = 0; i < Object.keys(posSections).length; i++) {
+    if (window.pageYOffset >= posSections[idSections[i]] &&
+      (window.pageYOffset < posSections[idSections[i + 1]] || i == 5) &&
+      (window.pageYOffset > posSections[idSections[i - 1]] || i == 0)) {
       $('a[href="' + idSections[i] + '"]').parent().addClass('active')
     } else {
       $('a[href="' + idSections[i] + '"]').parent().removeClass('active')
@@ -46,8 +46,8 @@ function animarNav() {
 }
 //función que me actualiza las posiciones de las seccciones
 function actualizarPosSec() {
-  posSections = []
+  posSections = {}
   for (var i = 0; i < idSections.length; i++) {
-    posSections.push($(idSections[i]).position().top - nav)
+    posSections[idSections[i]]=$(idSections[i]).position().top - nav
   }
 }
