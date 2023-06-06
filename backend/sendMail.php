@@ -21,7 +21,7 @@ if (empty($errors)){
   $email_to = "santaeulalia@escoltesiguies.cat";
   $email_subject = $_POST['subject'];
 
-  $email_message = "Detalls del formulari de soci:\n\n";
+  $email_message = "Peticion de contacto a través de la plagina web\n\n";
   $email_message .= "Nom: " . $_POST['name'] . "\n";
   $email_message .= "Correu Electrònic: " . $_POST['email'] . "\n";
   $email_message .= "Telèfon: " . $_POST['telephone'] . "\n\n";
