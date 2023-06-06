@@ -44,7 +44,10 @@ header .intro-text .intro-heading {
     font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 40px;
     font-style: italic;
+    font-weight: bold;
     line-height: 40px;
+    color: var(--secondary-color);
+    text-shadow: 3px 3px var(--primary-color);
   }
 
   header .intro-text .intro-heading {
@@ -54,5 +57,7 @@ header .intro-text .intro-heading {
     font-size: 75px;
     font-weight: 700;
     line-height: 75px;
+    color: var(--secondary-color);
+    text-shadow: 3px 3px var(--primary-color);
   }
 }

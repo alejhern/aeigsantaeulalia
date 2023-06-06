@@ -1,5 +1,7 @@
 #agrupament{
     background-color: var(--tertiary-color);
+    background-position: center 100%;
+    background-repeat: none;
 }
 
 p.presentacion{

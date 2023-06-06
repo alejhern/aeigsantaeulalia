@@ -41,10 +41,10 @@ body::-webkit-scrollbar-thumb {
   height: 100px;
 }
 
-p {
+p:not(.text-pea) {
   font-size: x-large;
   line-height: 1.75;
-  color: white;
+  color: #fff;
 }
 
 a,
@@ -54,7 +54,7 @@ a:active,
 a.active {
   outline: 0;
   text-decoration: none;
-  color: white;
+  color: #fff;
 }
 
 a.link-in-text {
@@ -155,7 +155,7 @@ footer #meg img {
 
 #social-media > h2 {
   font-size: 140%;
-  color: white;
+  color: #fff;
   text-align: center;
 }
 

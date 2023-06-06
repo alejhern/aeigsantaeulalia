@@ -19,6 +19,7 @@ nav {
   font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
   color: #fff;
   text-shadow: 3px 3px var(--secondary-color);
+  font-weight: bold;
 }
 
 .navbar-default .navbar-brand:hover {

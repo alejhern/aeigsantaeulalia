@@ -61,8 +61,8 @@
 }
 
 .et-branques-tab:hover {
-  color: white;
-  background: rgba(102, 177, 241, 0.8);
+  color: #fff;
+  font-weight: bold;
   transition: all 0.5s ease;
 }
 
@@ -71,7 +71,7 @@
   bottom: 0;
   width: 0;
   height: 6px;
-  background: var(--tertiary-color);
+  background: var(--secondary-color);
   transition: left 0.3s ease;
 }
 
@@ -92,48 +92,62 @@
 }
 
 a.cill-link,
-a.cill-link:hover,
 a.cill-link:focus,
 a.cill-link:active,
 a.cill-link.active {
-  color: var(--cill-color)!important;
+  color: var(--cill-color);
   font-weight: bold;
+}
+
+.cill-link:hover {
+  background: var(--cill-color);
 }
 
 a.llid-link,
-a.llid-link:hover,
-a.llid-link:focus,
 a.llid-link:active,
 a.llid-link.active {
-  color: var(--llid-color)!important;
+  color: var(--llid-color);
   font-weight: bold;
+}
+
+.llid-link:hover {
+  background: var(--llid-color);
 }
 
 a.ring-link,
-a.ring-link:hover,
 a.ring-link:focus,
 a.ring-link:active,
 a.ring-link.active {
-  color: var(--ring-color)!important;
+  color: var(--ring-color);
   font-weight: bold;
+}
+
+.ring-link:hover {
+  background: var(--ring-color);
 }
 
 a.pic-link,
-a.pic-link:hover,
 a.pic-link:focus,
 a.pic-link:active,
 a.pic-link.active {
-  color: var(--pic-color)!important;
+  color: var(--pic-color);
   font-weight: bold;
 }
 
+.pic-link:hover {
+  background: var(--pic-color);
+}
+
 a.truc-link,
-a.truc-link:hover,
 a.truc-link:focus,
 a.truc-link:active,
 a.truc-link.active {
-  color: var(--truc-color)!important;
+  color: var(--truc-color);
   font-weight: bold;
+}
+
+.truc-link:hover {
+  background: var(--truc-color);
 }
 
 #tab-cill{
