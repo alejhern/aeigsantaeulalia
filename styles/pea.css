@@ -1,20 +1,3 @@
-#headerpea {
-  text-align: center;
-  color: var(--tertiary-color);
-}
-
-#headerpea .intro-text {
-  padding-top: 3%;
-  padding-bottom: 1%;
-  display: flex;
-  justify-content: center;
-}
-
-#headerpea .intro-text .intro-heading {
-  font-size: 50px;
-  font-weight: bold;
-}
-
 #link-pea{
   color: var(--tertiary-color);
 }

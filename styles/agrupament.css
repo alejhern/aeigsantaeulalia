@@ -1,0 +1,11 @@
+#agrupament{
+    background-color: var(--tertiary-color);
+}
+
+p.presentacion{
+    font-size: 30px;
+    justify-content: center;
+    text-align: justify;
+    padding-left: 6%;
+    padding-right: 6%;
+}

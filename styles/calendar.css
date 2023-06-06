@@ -5,8 +5,9 @@
   padding-top: 16px;
 }
 
-option.calendari {
+option.calendari, #rowSelectCalendar label, #calendarSelect {
   text-align: center;
+  font-weight: bold;
 }
 
 #calendar{

@@ -39,7 +39,7 @@
   width: 100%;
   height: 70px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  background: #fff;
+  background: var(--primary-color);
   z-index: 10;
 }
 
@@ -71,7 +71,7 @@
   bottom: 0;
   width: 0;
   height: 6px;
-  background: #66b1f1;
+  background: var(--tertiary-color);
   transition: left 0.3s ease;
 }
 
@@ -89,4 +89,69 @@
   .et-branques-tab {
     font-size: 1rem;
   }
+}
+
+a.cill-link,
+a.cill-link:hover,
+a.cill-link:focus,
+a.cill-link:active,
+a.cill-link.active {
+  color: var(--cill-color)!important;
+  font-weight: bold;
+}
+
+a.llid-link,
+a.llid-link:hover,
+a.llid-link:focus,
+a.llid-link:active,
+a.llid-link.active {
+  color: var(--llid-color)!important;
+  font-weight: bold;
+}
+
+a.ring-link,
+a.ring-link:hover,
+a.ring-link:focus,
+a.ring-link:active,
+a.ring-link.active {
+  color: var(--ring-color)!important;
+  font-weight: bold;
+}
+
+a.pic-link,
+a.pic-link:hover,
+a.pic-link:focus,
+a.pic-link:active,
+a.pic-link.active {
+  color: var(--pic-color)!important;
+  font-weight: bold;
+}
+
+a.truc-link,
+a.truc-link:hover,
+a.truc-link:focus,
+a.truc-link:active,
+a.truc-link.active {
+  color: var(--truc-color)!important;
+  font-weight: bold;
+}
+
+#tab-cill{
+  background-color: var(--cill-color);
+}
+
+#tab-llid{
+  background-color: var(--llid-color);
+}
+
+#tab-ring{
+  background-color: var(--ring-color);
+}
+
+#tab-pic{
+  background-color: var(--pic-color);
+}
+
+#tab-truc{
+  background-color: var(--truc-color);
 }
