@@ -1,16 +1,16 @@
 var nav
 var posSections
 const idSections = ["#historia", "#agrupament", "#pea", "#branques", "#calendari", "#contacta"]
-$(document).ready(function() {
+$(document).ready(function () {
   nav = $('nav').outerHeight(true)
   animarNav()
   actualizarPosSec()
-  $(window).scroll(function() {
+  $(window).scroll(function () {
     nav = $('nav').outerHeight(true)
     animarNav()
   });
   //Al clicar sobre una sección del navbar la pagina hace scroll hasta la escogida
-  $("a.page-scroll").click(function(e) {
+  $("a.page-scroll").click(function (e) {
     e.preventDefault()
     if ($('button.navbar-toggler').is(":visible")) {
       $('button.navbar-toggler').click()
@@ -29,7 +29,7 @@ $(document).ready(function() {
 //función que da genera la amimacion del Nav
 function animarNav() {
   actualizarPosSec()
-  if (window.pageYOffset >= ($('#header-text').position().top - nav)) {
+  if (window.pageYOffset >= ($('.intro-heading').position().top - nav)) {
     $('.navbar-default').addClass('navbar-shrink');
   } else {
     $('.navbar-default').removeClass('navbar-shrink');
@@ -48,6 +48,6 @@ function animarNav() {
 function actualizarPosSec() {
   posSections = {}
   for (var i = 0; i < idSections.length; i++) {
-    posSections[idSections[i]]=$(idSections[i]).position().top - nav
+    posSections[idSections[i]] = $(idSections[i]).position().top - nav
   }
 }

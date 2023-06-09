@@ -20,10 +20,10 @@ const key = 'AIzaSyBnNAISIUKe6xdhq1_rjor2rxoI3UlMY7k'
 
 var calendarSelected = 'cau'
 
-$(document).ready(function() {
+$(document).ready(function () {
   generarCalendario()
   getEvents()
-  $('#calendarSelect').change(function() {
+  $('#calendar-select').change(function () {
     calendarSelected = $(this).val()
     getEvents()
   })
@@ -32,7 +32,7 @@ $(document).ready(function() {
 function getEvents() {
   let events = []
   const url = 'https://www.googleapis.com/calendar/v3/calendars/' + idCalendar[calendarSelected] + '/events?key=' + key
-  $.get(url, function(data, status) {
+  $.get(url, function (data, status) {
     if (status === 'success') {
       var calendarEvents = data.items
       const color = colorBranques[calendarSelected]

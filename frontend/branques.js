@@ -81,5 +81,6 @@ class StickyNavigation {
 	}
 }
 $(document).ready(function() {
-	new StickyNavigation();
+	var stick = new StickyNavigation();
+	stick.findCurrentTabSelector()
 });
