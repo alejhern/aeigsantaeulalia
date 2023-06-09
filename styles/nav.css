@@ -75,7 +75,7 @@ nav {
 }
 
 @media(max-width:1200px) {
-  .navbar-default{
+  .navbar-default {
     background-color: var(--primary-color);
   }
 
@@ -83,6 +83,7 @@ nav {
     display: flex;
     text-align: center;
   }
+
   .nav-item {
     margin: auto;
     width: 80% !important;

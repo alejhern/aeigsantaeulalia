@@ -10,15 +10,18 @@
   -o-background-size: cover;
 }
 
-form{
+form {
   width: 70%;
 }
 
-input.form-contact, select.form-contact, option.form-contact,textarea.form-contact{
+input.form-contact,
+select.form-contact,
+option.form-contact,
+textarea.form-contact {
   min-height: 50px;
 }
 
-label.form-contact{
+label.form-contact {
   color: var(--secondary-color);
   font-weight: 900;
   display: flex;
@@ -27,7 +30,7 @@ label.form-contact{
   text-shadow: 2px 2px var(--primary-color);
 }
 
-button[type="submit"]{
+button[type="submit"] {
   font-weight: bold;
   font-size: 150%;
   height: auto;

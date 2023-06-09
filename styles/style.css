@@ -41,10 +41,46 @@ body::-webkit-scrollbar-thumb {
   height: 100px;
 }
 
+.row {
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.parallax {
+  background-size: cover;
+}
+
+.parallax-inner {
+  padding-top: 20%;
+  padding-bottom: 20%;
+}
+
+h1 {
+  font-size: 160px;
+  text-align: center;
+}
+
+h3 {
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
 p:not(.text-pea) {
   font-size: x-large;
   line-height: 1.75;
   color: #fff;
+}
+
+p.presentacion {
+  font-size: 30px;
+  justify-content: center;
+  text-align: justify;
+  padding-left: 6%;
+  padding-right: 6%;
 }
 
 a,
@@ -72,15 +108,8 @@ a.link-in-text:hover {
   display: flex;
   justify-content: center;
   color: var(--secondary-color);
-  text-shadow: 3px 3px var(--primary-color);
+  text-shadow: 6px 6px var(--primary-color);
   text-align: center;
-}
-
-.row {
-  display: flex;
-  justify-content: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
 }
 
 iframe {
@@ -99,7 +128,7 @@ footer div {
   text-align: center;
 }
 
-footer #logosScoltas img {
+footer #logos-scoltas img {
   width: 35%;
   max-height: max-content;
 }
@@ -114,7 +143,7 @@ footer #meg img {
   --youtube: #c4302b;
 }
 
-#social-media>ul {
+#social-media ul {
   display: flex;
   justify-content: center;
   padding: 0;
@@ -151,12 +180,6 @@ footer #meg img {
 
 #social-media ul li .youtube:hover {
   background: var(--youtube);
-}
-
-#social-media > h2 {
-  font-size: 140%;
-  color: #fff;
-  text-align: center;
 }
 
 footer span.copyright {

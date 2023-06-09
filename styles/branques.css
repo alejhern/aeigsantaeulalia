@@ -1,5 +1,34 @@
-.et-branques-tabs,
-.et-slide {
+#branques {
+  padding-left: 0%;
+  padding-right: 0%;
+}
+
+#cill .parallax {
+  background: url('../media/cill.png') repeat fixed 100%;
+  color: var(--cill-color);
+}
+
+#llid .parallax {
+  background: url('../media/llid.png') repeat fixed 100%;
+  color: var(--llid-color);
+}
+
+#ring .parallax {
+  background: url('../media/ring.png') repeat fixed 100%;
+  color: var(--ring-color);
+}
+
+#pic .parallax {
+  background: url('../media/pic.png') repeat fixed 100%;
+  color: var(--pic-color);
+}
+
+#truc .parallax {
+  background: url('../media/truc.png') repeat fixed 100%;
+  color: var(--truc-color);
+}
+
+.et-branques-tabs {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -11,24 +40,6 @@
 
 .et-branques-tabs{
   visibility: hidden;
-}
-
-.et-slide{
-  height: 100vh;
-}
-
-.et-branques-tabs h1,
-.et-slide h1 {
-  font-size: 2rem;
-  margin: 0;
-  letter-spacing: 1rem;
-}
-
-.et-branques-tabs h3,
-.et-slide h3 {
-  font-size: 1rem;
-  letter-spacing: 0.3rem;
-  opacity: 0.6;
 }
 
 .et-branques-tabs-container {
@@ -76,6 +87,7 @@
 }
 
 @media (min-width: 800px) {
+
   .et-branques-tabs h1,
   .et-slide h1 {
     font-size: 3rem;
@@ -92,14 +104,13 @@
 }
 
 a.cill-link,
-a.cill-link:focus,
 a.cill-link:active,
 a.cill-link.active {
   color: var(--cill-color);
   font-weight: bold;
 }
 
-.cill-link:hover {
+a.cill-link:hover {
   background: var(--cill-color);
 }
 
@@ -110,12 +121,11 @@ a.llid-link.active {
   font-weight: bold;
 }
 
-.llid-link:hover {
+a.llid-link:hover {
   background: var(--llid-color);
 }
 
 a.ring-link,
-a.ring-link:focus,
 a.ring-link:active,
 a.ring-link.active {
   color: var(--ring-color);
@@ -127,45 +137,23 @@ a.ring-link.active {
 }
 
 a.pic-link,
-a.pic-link:focus,
 a.pic-link:active,
 a.pic-link.active {
   color: var(--pic-color);
   font-weight: bold;
 }
 
-.pic-link:hover {
+a.pic-link:hover {
   background: var(--pic-color);
 }
 
 a.truc-link,
-a.truc-link:focus,
 a.truc-link:active,
 a.truc-link.active {
   color: var(--truc-color);
   font-weight: bold;
 }
 
-.truc-link:hover {
+a.truc-link:hover {
   background: var(--truc-color);
-}
-
-#tab-cill{
-  background-color: var(--cill-color);
-}
-
-#tab-llid{
-  background-color: var(--llid-color);
-}
-
-#tab-ring{
-  background-color: var(--ring-color);
-}
-
-#tab-pic{
-  background-color: var(--pic-color);
-}
-
-#tab-truc{
-  background-color: var(--truc-color);
 }

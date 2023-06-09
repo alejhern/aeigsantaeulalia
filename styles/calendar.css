@@ -1,16 +1,18 @@
-#rowSelectCalendar{
+#calendari .input-row {
   display: flex;
   justify-content: center !important;
   margin: auto;
   padding-top: 16px;
 }
 
-option.calendari, #rowSelectCalendar label, #calendarSelect {
+option.calendari,
+#calendari .input-row label,
+#calendar-select {
   text-align: center;
   font-weight: bold;
 }
 
-#calendar{
+#calendar {
   width: 90%;
 }
 

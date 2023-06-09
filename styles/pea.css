@@ -1,15 +1,26 @@
 #pea{
-  background-image: url(../media/horizonte.jpg);
-  background-repeat: none;
+  background: url(../media/horizonte.jpg) repeat fixed 100%;;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
+  padding-left: 0%;
+  padding-right: 0%;
+}
+
+#pea .row{
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .text-pea{
   color: var(--primary-color);
   font-size: large;
+}
+
+#caja-santa{
+    background: url('../media/caja_santa.jpg') no-repeat fixed 100%;
+    background-size: cover;
 }
 
 #link-pea{
