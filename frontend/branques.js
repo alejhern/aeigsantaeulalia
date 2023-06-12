@@ -37,8 +37,8 @@ class StickyNavigation {
 	}
 
 	checkTabContainerPosition() {
-		//let offset = $('.et-branques-tabs').offset().top + $('.et-branques-tabs').height() - this.tabContainerHeight;
-		if (window.pageYOffset >= posSections['#branques'] && (window.innerHeight + window.scrollY) <= (posSections['#calendari'] + 50	)) {
+		let offset = $('.et-branques-tabs-container').height();
+		if (window.pageYOffset >= posSections['#branques'] && (window.innerHeight + window.scrollY) <= $('#camisas').position().top + offset) {
 			$(".et-branques-tabs-container").addClass("et-branques-tabs-container--bottom");
 		} else {
 			$(".et-branques-tabs-container").removeClass("et-branques-tabs-container--bottom");
@@ -80,7 +80,7 @@ class StickyNavigation {
 		$(".et-branques-tab-slider").css("left", left);
 	}
 }
-$(document).ready(function() {
+$(document).ready(function () {
 	var stick = new StickyNavigation();
 	stick.findCurrentTabSelector()
 });
