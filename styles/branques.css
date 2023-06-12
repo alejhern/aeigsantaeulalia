@@ -4,28 +4,33 @@
 }
 
 #cill .parallax {
-  background: url('../media/cill.png') repeat fixed 100%;
+  background: url('../media/cill.png') no-repeat fixed 100%;
   color: var(--cill-color);
 }
 
 #llid .parallax {
-  background: url('../media/llid.png') repeat fixed 100%;
+  background: url('../media/llid.png') no-repeat fixed 100%;
   color: var(--llid-color);
 }
 
 #ring .parallax {
-  background: url('../media/ring.png') repeat fixed 100%;
+  background: url('../media/ring.png') no-repeat fixed 100%;
   color: var(--ring-color);
 }
 
 #pic .parallax {
-  background: url('../media/pic.png') repeat fixed 100%;
+  background: url('../media/pic.png') no-repeat fixed 100%;
   color: var(--pic-color);
 }
 
 #truc .parallax {
-  background: url('../media/truc.png') repeat fixed 100%;
+  background: url('../media/truc.png') no-repeat fixed 0%;
   color: var(--truc-color);
+}
+
+#camisas{
+  background: url(../media/camisas.png) no-repeat fixed 100%;
+  height: 20rem;
 }
 
 .et-branques-tabs {
