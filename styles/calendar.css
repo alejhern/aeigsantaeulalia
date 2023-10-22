@@ -13,9 +13,17 @@ option.calendari,
 }
 
 #calendar {
-  width: 90%;
+  width: 96%;
 }
 
 .fc-center {
   text-transform: uppercase;
+}
+
+.fc-event-container{
+  font-size: large;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
 }

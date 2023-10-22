@@ -1,5 +1,6 @@
-#pea{
-  background: url(../media/horizonte.jpg) repeat fixed 100%;;
+#pea {
+  background: url(../media/horizonte.jpg) repeat fixed 100%;
+  ;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -8,38 +9,41 @@
   padding-right: 0%;
 }
 
-#pea .row{
+#pea .row {
   padding-left: 30px;
   padding-right: 30px;
 }
 
-.fa-stack i:not(.fa-circle){
+.fa-stack i:not(.fa-circle) {
   color: var(--secondary-color);
 }
 
-.fa-circle{
+.fa-circle {
   color: var(--primary-color);
 }
 
-h4.service-heading{
+h4.service-heading {
   font-size: xx-large;
   font-weight: bold;
   text-align: center;
   color: var(--tertiary-color);
 }
 
-.text-pea{
+.text-pea {
   color: var(--primary-color);
   font-size: x-large;
   text-align: center;
 }
 
-#caja-santa{
-    background: url('../media/caja_santa.jpg') no-repeat fixed 100%;
-    background-size: cover;
+#caja-santa {
+  background: url('../media/caja_santa.jpg') no-repeat fixed 100%;
+  background-size: cover;
 }
 
-#link-pea{
+#link-pea {
   color: var(--secondary-color);
   font-size: 50px;
+  font-weight: bold;
+  margin-top: auto;
+  margin-bottom: auto;
 }

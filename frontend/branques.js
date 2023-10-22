@@ -2,7 +2,7 @@ class StickyNavigation {
 	constructor() {
 		this.currentId = null;
 		this.currentTab = null;
-		this.tabContainerHeight = 70;
+		this.tabContainerHeight = $('#nav-branques').outerHeight(true);
 		let self = this;
 		$(".et-branques-tab").click(function () {
 			self.onTabClick(event, $(this));
@@ -21,7 +21,7 @@ class StickyNavigation {
 	onTabClick(event, element) {
 		event.preventDefault();
 		let scrollTop =
-			$(element.attr("href")).offset().top - this.tabContainerHeight + 1;
+			$(element.attr("href")).offset().top - nav + 1;
 		$("html, body").animate({ scrollTop: scrollTop }, 600);
 	}
 
@@ -51,7 +51,7 @@ class StickyNavigation {
 		let self = this;
 		$(".et-branques-tab").each(function () {
 			let id = $(this).attr("href");
-			let offsetTop = $(id).offset().top - self.tabContainerHeight;
+			let offsetTop = $(id).offset().top - nav - 1
 			let offsetBottom =
 				$(id).offset().top + $(id).height() - self.tabContainerHeight;
 			if (

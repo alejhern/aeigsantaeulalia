@@ -3,9 +3,21 @@
   padding-right: 0%;
 }
 
+#branques .row {
+  padding-right: 15px;
+  padding-left: 15px;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+}
+
 #cill .parallax {
   background: url('../media/cill.png') no-repeat fixed 100%;
   color: var(--cill-color);
+}
+
+#cill .row {
+  background-color: var(--cill-color);
 }
 
 #llid .parallax {
@@ -13,9 +25,17 @@
   color: var(--llid-color);
 }
 
+#llid .row {
+  background-color: var(--llid-color);
+}
+
 #ring .parallax {
   background: url('../media/ring.png') no-repeat fixed 100%;
   color: var(--ring-color);
+}
+
+#ring .row {
+  background-color: var(--ring-color);
 }
 
 #pic .parallax {
@@ -23,12 +43,20 @@
   color: var(--pic-color);
 }
 
+#pic .row {
+  background-color: var(--pic-color);
+}
+
 #truc .parallax {
   background: url('../media/truc.png') no-repeat fixed 0%;
   color: var(--truc-color);
 }
 
-#camisas{
+#truc .row {
+  background-color: var(--truc-color);
+}
+
+#camisas {
   background: url(../media/camisas.png) no-repeat fixed 100%;
   height: 20rem;
 }
@@ -43,7 +71,7 @@
   padding: 0 2em;
 }
 
-.et-branques-tabs{
+.et-branques-tabs {
   visibility: hidden;
 }
 

@@ -52,11 +52,6 @@ body::-webkit-scrollbar-thumb {
   background-size: cover !important;
 }
 
-.parallax-inner {
-  padding-top: 20%;
-  padding-bottom: 20%;
-}
-
 h1 {
   font-size: 160px;
   text-align: center;
