@@ -53,6 +53,14 @@ body::-webkit-scrollbar-thumb {
 
 .parallax {
   background-size: cover !important;
+  background-attachment: fixed;
+}
+
+@media (max-width: 768px) {
+  .parallax {
+    background-size: contain !important;
+    background-attachment: scroll; /* Para evitar el efecto parallax en móviles */
+  }
 }
 
 .parallax-inner {
