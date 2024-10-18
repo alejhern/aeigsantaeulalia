@@ -2,7 +2,7 @@ header {
   text-align: center;
   color: #fff;
   background-attachment: scroll;
-  background: url(../media/portada.jpg) repeat fixed 100%;
+  background: url(../media/portada.jpg);
   background-position: center 100%;
   background-repeat: none;
   -webkit-background-size: cover;
