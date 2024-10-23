@@ -14,16 +14,60 @@ option.calendari,
 
 #calendar {
   width: 96%;
-}
-
-.fc-center {
+  margin-top: 20px;
   text-transform: uppercase;
 }
 
-.fc-event-container{
+.fc-day-header {
+  background-color: var(--tertiary-color);
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.fc-day {
+  background-color: #f8f9fa;
+  border: 1px solid #e0e0e0;
+}
+
+.fc-event {
+  background-color: #FFC107;
+  border: none;
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 5px;
+  text-align: center;
+}
+
+.fc-event:hover {
+  background-color: #FFCA2D;
+}
+
+.fc-event.fc-event-selected {
+  background-color: #6F42C1;
+}
+
+.fc-today {
+  background-color: #E9ECEF;
+}
+
+#calendari .input-row {
+  display: flex;
+  justify-content: center !important;
+  margin: auto;
+  padding-top: 16px;
+}
+
+option.calendari,
+#calendari .input-row label,
+#calendar-select {
+  text-align: center;
+  font-weight: bold;
+}
+
+.fc-event-container {
   font-size: large;
   text-transform: uppercase;
-  color: #fff;
+  color: #ffffff;
   font-weight: bold;
   text-align: center;
 }
